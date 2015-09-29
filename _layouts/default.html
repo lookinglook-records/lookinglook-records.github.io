@@ -1,91 +1,97 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{page.title}} · {% endif %}Lookinglook Records{% if page.titleAfter %} · {{page.titleAfter}}{% endif %}</title>
+    <meta name="description" content="{{page.meta}}">
+    <meta name="keywords" content="{{page.keywords}}">
+    <meta name="author" content="Ihor Orlovskyi">
 
-	<title>{% if page.title %}{{page.title}} · {% endif %}Lookinglook Records{% if page.titleAfter %} · {{page.titleAfter}}{% endif %}</title>
-	<meta name="description" content="{{page.meta}}">
-	<meta name="keywords" content="{{page.keywords}}">
-	<meta name="author" content="Ihor Orlovskyi">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-32.png">
 
-	<link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
-
-	<link rel="icon" type="image/png" href="{{site.baseurl}}/assets/img/favicons/favicon-32.png">
-
-	<script>
-		window.addEventListener("load", function(){
-			var load_screen = document.getElementById("load_screen");
-			document.body.removeChild(load_screen);
-		});
-	</script>
-	<style>
-		div#load_screen{
-			background: #000;
-			opacity: 1;
-			position: fixed;
-				z-index:10;
-			top: 0px;
-			width: 100%;
-			height: 1600px;
-		}
-		div#load_screen > div#loading{
-			color:#FFF;
-			width:120px;
-			height:24px;
-			margin: 300px auto;
-		}
-	</style>
+    <script>
+        window.addEventListener("load", function(){
+            var load_screen = document.getElementById("load_screen");
+            document.body.removeChild(load_screen);
+        });
+    </script>
+    <style>
+        div#load_screen{
+            background: #000;
+            opacity: 1;
+            position: fixed;
+                z-index:10;
+            top: 0px;
+            width: 100%;
+            height: 1600px;
+        }
+        div#load_screen > div#loading{
+            color:#FFF;
+            width:120px;
+            height:24px;
+            margin: 300px auto;
+        }
+    </style>
 
 </head>
 <body>
 
-	<div id="load_screen">
-		<div id="loading">Loading</div>
-	</div>
+    <div id="load_screen">
+        <div id="loading">Loading</div>
+    </div>
 
-	<main>
+    <main>
 
-		{{ content }}
+        {{ content }}
 
-		<footer>
-			<section>
-				<nav>
-					<a href="https://lookinglook.bandcamp.com" target="_blank">bandcamp</a>
-					<a href="https://www.facebook.com/lookinglook.records" target="_blank">facebook</a>
-					<a href="https://soundcloud.com/lookinglook" target="_blank">soundcloud</a>
-					<a href="http://discogs.com/label/Lookinglook+Records" target="_blank">discogs</a>
-				</nav>
-				<nav class="labels">
-					<a href="http://sentimony.com">Sentimony Records</a>
-					<a href="http://aquadeepmusic.com">Aqua Deep Music</a>
-					<a class="active" href="http://lookinglook.com">Lookinglook Records</a>
-				</nav>
-				<nav class="versions">
-					<a href="http://lookinglook.com">actual</a>
-					<a class="active" href="http://lookinglook-records.github.io">github</a>
-					<a href="http://lookinglook-records.github.io/2010/">old</a>
-				</nav>
-				<div>Web Development & Design by <a href="http://ihororlovskyi.github.io/" target="_blank">Ihor Orlovskyi</a></div>
-				<div class="copyright">Lookinglook Records 2010 - 2015 © All Rights Reserved</div>
-			</section>
-		</footer>
+        <footer>
+            <section>
+                <nav>
+                    <a href="https://lookinglook.bandcamp.com" target="_blank">bandcamp</a>
+                    <a href="https://www.facebook.com/lookinglook.records" target="_blank">facebook</a>
+                    <a href="https://soundcloud.com/lookinglook" target="_blank">soundcloud</a>
+                    <a href="http://discogs.com/label/Lookinglook+Records" target="_blank">discogs</a>
+                </nav>
+                <nav class="labels">
+                    <a href="http://sentimony.com">Sentimony Records</a>
+                    <a href="http://aquadeepmusic.com">Aqua Deep Music</a>
+                    <a class="active" href="http://lookinglook.com">Lookinglook Records</a>
+                </nav>
+                <nav class="versions">
+                    <a href="http://lookinglook.com">actual</a>
+                    <a class="active" href="http://lookinglook-records.github.io">github</a>
+                    <a href="http://lookinglook-records.github.io/2010/">old</a>
+                </nav>
+                <div>Web Development & Design by <a href="http://ihororlovskyi.github.io/" target="_blank">Ihor Orlovskyi</a></div>
+                <div class="copyright">Lookinglook Records 2010 - 2015 © All Rights Reserved</div>
+            </section>
+        </footer>
 
-	</main>
+    </main>
 
-	<script src="{{site.baseurl}}/assets/js/vendor/jquery-2.1.1.min.js"></script>
-	<script src="{{site.baseurl}}/assets/js/main.js"></script>
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script src="{{site.baseurl}}/assets/js/vendor/jquery-2.1.1.min.js"></script>
+    <script src="{{site.baseurl}}/assets/js/main.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		ga('create', 'UA-55136854-1', 'auto');
-		ga('send', 'pageview');
+        ga('create', 'UA-55136854-1', 'auto');
+        ga('send', 'pageview');
 
-	</script>
+    </script>
 </body>
 </html>
