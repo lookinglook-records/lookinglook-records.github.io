@@ -5,27 +5,22 @@ category: releases
 permalink: /release/unusual-cosmic-process-weightlessness/
 title: Unusual Cosmic Process ‎«Weightlessness»
 
-ektoplazm: free-music/grower
-bandcamp: lookinglook.bandcamp.com/album/va-grower
-discogs: http://www.discogs.com/Various-Grower/release/2356268
+ektoplazm: http://www.ektoplazm.com/free-music/unusual-cosmic-process-weightlessness
+bandcamp: https://lookinglook.bandcamp.com/album/unusual-cosmic-process-weightlessness
+discogs: 
 
-bandcamp-id: 4231998669
+bandcamp-id: 
 ---
 
 Tracklis:
 
-01. Atati - Versions [60bpm]
-02. Spectrum Vision - Outsiders [100bpm]
-03. Mahaon - Leaving The Limit (feat. Locus) [75bpm]
-04. Vonoom - Dirty Dishwater [80bpm]
-05. Overdream - Mystique Cabalistique [92bpm]
-06. E.R.S. - I Went Irie (The Orient Funk Experience) [100bpm]
-07. Irukanji - Muti Cappa [88bpm]
-08. ShizoLizer Gin - Sweet Dino [100bpm]
-09. Xylonite - Thermal Expansion [125bpm]
-10. Unusual Cosmic Process - Cosmic Harmony [96bpm]
-11. Liquid Crystal - Raindrops [90bpm]
-12. Kalpataru Tree - MetaLullaby [77bpm]
+01 - Final Race (126 BPM) 
+02 - Lighted Up (126 BPM) 
+03 - Connected Trough An Ozone Hole (92 BPM) 
+04 - Weightlessness (95 BPM) 
+05 - Place On Earth (118 BPM) 
+06 - Emotional Trip (120 BPM) 
+07 - Maximum Depth (103 BPM)
 
 
 

@@ -5,27 +5,37 @@ category: releases
 permalink: /release/va-gamayun-tale/
 title: VA «Gamayun Tale»
 
-ektoplazm: free-music/grower
-bandcamp: lookinglook.bandcamp.com/album/va-grower
-discogs: http://www.discogs.com/Various-Grower/release/2356268
+ektoplazm: 
+bandcamp: https://lookinglook.bandcamp.com/album/va-gamayun-tale
+discogs: 
 
-bandcamp-id: 4231998669
+bandcamp-id: 
 ---
 
 Tracklis:
 
-01. Atati - Versions [60bpm]
-02. Spectrum Vision - Outsiders [100bpm]
-03. Mahaon - Leaving The Limit (feat. Locus) [75bpm]
-04. Vonoom - Dirty Dishwater [80bpm]
-05. Overdream - Mystique Cabalistique [92bpm]
-06. E.R.S. - I Went Irie (The Orient Funk Experience) [100bpm]
-07. Irukanji - Muti Cappa [88bpm]
-08. ShizoLizer Gin - Sweet Dino [100bpm]
-09. Xylonite - Thermal Expansion [125bpm]
-10. Unusual Cosmic Process - Cosmic Harmony [96bpm]
-11. Liquid Crystal - Raindrops [90bpm]
-12. Kalpataru Tree - MetaLullaby [77bpm]
+1.
+Celestial Consciousness - Rise 08:06
+2.
+Magic Science - Atman 07:05
+3.
+PharaOm - White Lotus Energy 07:45
+4.
+Nova Fractal - Through Our Senses (Sky Technology Remix) 08:34
+5.
+Roof Raiser - Stone Garden 06:20
+6.
+Prok - Gliese 08:33
+7.
+Ufomatka - Asteroid 08:40
+8.
+Wanderlust - Square Of The Cadboard Clocks 10:08
+9.
+ShizoLizer Gin - Skygravity Trance Mission 06:14
+10.
+Jyotish - Purple Imagination 08:16
+11.
+Rexuss - Chakra 08:17
 
 
 

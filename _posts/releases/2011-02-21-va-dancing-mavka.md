@@ -5,27 +5,24 @@ category: releases
 permalink: /release/va-dancing-mavka/
 title: VA «Dansing Mavka»
 
-ektoplazm: free-music/grower
-bandcamp: lookinglook.bandcamp.com/album/va-grower
-discogs: http://www.discogs.com/Various-Grower/release/2356268
+ektoplazm: http://www.ektoplazm.com/free-music/dancing-mavka
+bandcamp: https://lookinglook.bandcamp.com/album/va-dancing-mavka
+discogs: 
 
-bandcamp-id: 4231998669
+bandcamp-id: 
 ---
 
 Tracklis:
 
-01. Atati - Versions [60bpm]
-02. Spectrum Vision - Outsiders [100bpm]
-03. Mahaon - Leaving The Limit (feat. Locus) [75bpm]
-04. Vonoom - Dirty Dishwater [80bpm]
-05. Overdream - Mystique Cabalistique [92bpm]
-06. E.R.S. - I Went Irie (The Orient Funk Experience) [100bpm]
-07. Irukanji - Muti Cappa [88bpm]
-08. ShizoLizer Gin - Sweet Dino [100bpm]
-09. Xylonite - Thermal Expansion [125bpm]
-10. Unusual Cosmic Process - Cosmic Harmony [96bpm]
-11. Liquid Crystal - Raindrops [90bpm]
-12. Kalpataru Tree - MetaLullaby [77bpm]
+01 - Pandemicus - Out Of Space (142 BPM) 
+02 - Jyotish - 1000 Little Indians (150 BPM) 
+03 - Celestial Consciousness - Astral Dance (148 BPM) 
+04 - Ufomatka - Vega (139 BPM) 
+05 - Spirit Medicine - In The Brain Machines (150 BPM) 
+06 - Sky Technology - Reactor Of Life (145 BPM) 
+07 - Zelur Project AKA SynSUN - The New Creature (145 BPM) 
+08 - ShizoLizer Gin - Pony Ponyslas (145 BPM) 
+09 - Space Vibes System - Space Energy (145 BPM)
 
 
 
