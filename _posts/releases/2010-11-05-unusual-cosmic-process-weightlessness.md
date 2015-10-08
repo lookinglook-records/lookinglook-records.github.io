@@ -14,13 +14,13 @@ bandcamp-id:
 
 Tracklis:
 
-01 - Final Race (126 BPM) 
-02 - Lighted Up (126 BPM) 
-03 - Connected Trough An Ozone Hole (92 BPM) 
-04 - Weightlessness (95 BPM) 
-05 - Place On Earth (118 BPM) 
-06 - Emotional Trip (120 BPM) 
-07 - Maximum Depth (103 BPM)
+01. Unusual Cosmic Process - Final Race [126bpm]
+02. Unusual Cosmic Process - Lighted Up [126bpm]
+03. Unusual Cosmic Process - Connected Trough An Ozone Hole [92bpm]
+04. Unusual Cosmic Process - Weightlessness [95bpm]
+05. Unusual Cosmic Process - Place On Earth [118bpm]
+06. Unusual Cosmic Process - Emotional Trip [120bpm]
+07. Unusual Cosmic Process - Maximum Depth [103bpm]
 
 
 
