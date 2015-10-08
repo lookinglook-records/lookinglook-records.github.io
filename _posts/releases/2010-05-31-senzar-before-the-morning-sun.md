@@ -14,16 +14,16 @@ bandcamp-id:
 
 Tracklis:
 
-01 - Intro (feat. Ariel Electron) (0 BPM) 
-02 - Deep Sea Civilization (0 BPM) 
-03 - Before The Morning Sun (66-132 BPM) 
-04 - Power Of Light (75 BPM) 
-05 - Mos På Træerne (75 BPM) 
-06 - Finsteraarhorn (Erot Remix) (85 BPM) 
-07 - Sun Dance (90 BPM) 
-08 - Path Of Dhyana (60-120 BPM) 
-09 - Book Of Dzyan (120 BPM) 
-10 - Before The Morning Sun (NASA Remix) (128 BPM)
+01. Senzar - Intro (feat. Ariel Electron) [0bpm]
+02. Senzar - Deep Sea Civilization [0bpm]
+03. Senzar - Before The Morning Sun [66-132bpm]
+04. Senzar - Power Of Light [75bpm]
+05. Senzar - Mos På Træerne [75bpm]
+06. Senzar - Finsteraarhorn [Erot Remix) (85bpm]
+07. Senzar - Sun Dance [90bpm]
+08. Senzar - Path Of Dhyana [60-120bpm]
+09. Senzar - Book Of Dzyan [120bpm]
+10. Senzar - Before The Morning Sun (NASA Remix) [128bpm]
 
 
 
