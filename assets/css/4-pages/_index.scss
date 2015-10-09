@@ -1,3 +1,8 @@
+nav.main-nav {
+    text-transform: uppercase;
+    margin: 40px auto;
+}
+
 article.artist {
     img {
         border: 2px solid #333;
@@ -8,8 +13,16 @@ article.artist {
         margin: 0 0 20px;
         padding: 0;
         li{
-            &.cat-no span {text-transform:uppercase;}
+            &.cat-no span {
+                text-transform: uppercase;
+            }
         }
     }
 }
 
+section.latest-releases {
+}
+
+ol {
+    text-align: left;
+}
