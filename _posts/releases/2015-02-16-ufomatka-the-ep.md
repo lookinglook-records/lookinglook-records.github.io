@@ -14,16 +14,11 @@ bandcamp-id:
 
 Tracklis:
 
-1.
-Ufomatka - Afrodancerequesting 04:49
-2.
-Ufomatka - Vanguard1 07:13
-3.
-Ufomatka - Freaky Son Of A Bitch 06:04
-4.
-Ufomatka - No End... 05:28
-5.
-Ufomatka - The Binman 05:43
+01. Ufomatka - Afrodancerequesting 04:49
+02. Ufomatka - Vanguard1
+03. Ufomatka - Freaky Son Of A Bitch
+04. Ufomatka - No End...
+05. Ufomatka - The Binman
 
 
 
