@@ -7,3 +7,14 @@ permalink: /releases/
 ---
 
 <h1>Releases</h1>
+
+<section class="latest-releases">
+    {% for releases in site.categories.releases limit:60 %}
+    <article class="relaselist-item isotope-item">
+        <a href="{{ releases.permalink }}">
+            <div class="title">{{ releases.title }}</div>
+        </a>
+    </article>
+    {% endfor %}
+</section>
+

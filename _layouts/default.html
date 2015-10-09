@@ -58,16 +58,6 @@ layout: compress
             <a href="{{ site.baseurl }}/artists/">artists</a>
         </nav>
 
-        <section class="latest-releases">
-            {% for releases in site.categories.releases limit:60 %}
-            <article class="relaselist-item isotope-item">
-                <a href="{{ site.baseurl }}{{ releases.url }}">
-                    <div class="title">{{ releases.title }}</div>
-                </a>
-            </article>
-            {% endfor %}
-        </section>
-
         {{ content }}
 
         <footer>
