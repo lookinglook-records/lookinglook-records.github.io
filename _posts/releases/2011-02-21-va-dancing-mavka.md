@@ -14,15 +14,15 @@ bandcamp-id:
 
 Tracklis:
 
-01 - Pandemicus - Out Of Space (142 BPM) 
-02 - Jyotish - 1000 Little Indians (150 BPM) 
-03 - Celestial Consciousness - Astral Dance (148 BPM) 
-04 - Ufomatka - Vega (139 BPM) 
-05 - Spirit Medicine - In The Brain Machines (150 BPM) 
-06 - Sky Technology - Reactor Of Life (145 BPM) 
-07 - Zelur Project AKA SynSUN - The New Creature (145 BPM) 
-08 - ShizoLizer Gin - Pony Ponyslas (145 BPM) 
-09 - Space Vibes System - Space Energy (145 BPM)
+01. Pandemicus - Out Of Space [142bpm]
+02. Jyotish - 1000 Little Indians [150bpm]
+03. Celestial Consciousness - Astral Dance [148bpm]
+04. Ufomatka - Vega [139bpm]
+05. Spirit Medicine - In The Brain Machines [150bpm]
+06. Sky Technology - Reactor Of Life [145bpm]
+07. Zelur Project AKA SynSUN - The New Creature [145bpm]
+08. ShizoLizer Gin - Pony Ponyslas [145bpm]
+09. Space Vibes System - Space Energy [145bpm]
 
 
 
