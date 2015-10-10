@@ -1,19 +1,17 @@
-body {
-    font: 400 16px/1.5 'Roboto', Arial, sans-serif;
-    color: $text-color;
-    text-align: center;
-    text-shadow: 1px 1px 1px $bg-color;
-    background: $bg-color url(/assets/img/bg.jpg) no-repeat center top;
-}
 a {
     color: $link-color;
     &:hover {
         color: $link-hover-color;
     }
 }
-// main {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     @include transform(translate(-50%, -50%));
-// }
+ol {
+    text-align: left;
+}
+body {
+    @include outer-container;
+    font: 400 16px/1.5 'Roboto', Arial, sans-serif;
+    color: $text-color;
+    text-align: center;
+    text-shadow: 1px 1px 1px $bg-color;
+    background: $bg-color url(/assets/img/bg.jpg) no-repeat center top;
+}

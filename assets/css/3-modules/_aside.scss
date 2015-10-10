@@ -1,0 +1,4 @@
+aside {
+    @include span-columns(6);
+    text-align: left;
+}
