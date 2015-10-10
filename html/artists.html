@@ -9,7 +9,7 @@ permalink: /artists/
 <h1>Artists</h1>
 
 <section class="latest-releases">
-    {% for artists in site.categories.artists limit:60 %}
+    {% for artists in site.categories.artists limit:20 %}
     <article class="relaselist-item isotope-item">
         <a href="{{ artists.permalink }}">
             <div class="title">{{ artists.title }}</div>

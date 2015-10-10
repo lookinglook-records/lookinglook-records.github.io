@@ -1,6 +1,11 @@
 nav.main-nav {
     text-transform: uppercase;
     margin: 40px auto;
+
+    a {
+        display: inline-block;
+        padding: 6px 12px;
+    }
 }
 
 article.artist {
