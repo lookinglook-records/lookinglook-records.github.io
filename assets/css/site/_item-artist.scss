@@ -1,0 +1,27 @@
+article.item-artist {
+    @include outer-container;
+
+    section.info {
+        @include span-columns(6);
+    }
+    section.music {
+        @include span-columns(6);
+        @include omega();
+
+        iframe.bandcamp-item {
+            display: block;
+            width: 100%;
+            overflow: hidden;
+            max-width: 320px;
+            border: 1px solid #4E4E4E;
+            margin-bottom: 10px;
+
+            &__track {
+                height: 82px;
+            }
+            &__release {
+                height: 400px;
+            }
+        }
+    }
+ }

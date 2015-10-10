@@ -2,4 +2,48 @@
 layout: default
 ---
 
-<h1>{{ page:title }}</h1>
+<article class="item-artist">
+    <section class="info">
+        <h1>{{ page:title }}</h1>
+
+        {% if page.photo %}
+            <img src="{{ page:photo }}" alt="Photo of {{ page:title }}" title="Photo of {{ page:title }}">
+        {% endif %}
+
+        {% if page.name %}
+            <p>Name: {{ page:name }}</p>
+        {% endif %}
+
+        {% if page.location %}
+            <p>Location: {{ page:location }}</p>
+        {% endif %}
+
+        {% if page.about %}
+            <p>{{ page:about }}</p>
+        {% endif %}
+    </section>
+    <section class="music">
+        {% if page.bandcamp-track-1 %}
+            <h2>Tracks:</h2>
+            <iframe class="bandcamp-item bandcamp-item__track" src="http://bandcamp.com/EmbeddedPlayer/v=2/track={{ page.bandcamp-track-1 }}/layout=http_3A_2F_2Fbandcamp-play.github.io_2Firukanji-track.json/bgcol=333/linkcol=88ffff/debug=true/"></iframe>
+        {% endif %}
+
+        {% if page.bandcamp-track-2 %}
+            <iframe class="bandcamp-item bandcamp-item__track" src="http://bandcamp.com/EmbeddedPlayer/v=2/track={{ page.bandcamp-track-2 }}/layout=http_3A_2F_2Fbandcamp-play.github.io_2Firukanji-track.json/bgcol=333/linkcol=88ffff/debug=true/"></iframe>
+        {% endif %}
+
+        {% if page.bandcamp-album-1 %}
+            <h2>Album:</h2>
+            <iframe class="bandcamp-item bandcamp-item__release" src="http://bandcamp.com/EmbeddedPlayer/v=2/track={{ page.bandcamp-album }}/layout=http_3A_2F_2Fbandcamp-play.github.io_2Firukanji-track.json/bgcol=333/linkcol=88ffff/debug=true/"></iframe>
+        {% endif %}
+
+        {% if page.bandcamp-compilation-1 %}
+            <h2>Compiled:</h2>
+            <iframe class="bandcamp-item bandcamp-item__release" src="http://bandcamp.com/EmbeddedPlayer/v=2/album={{ page.bandcamp-compilation-1 }}/layout=http_3A_2F_2Fbandcamp-play.github.io_2Firukanji-album.json/bgcol=333/linkcol=88ffff/debug=true/"></iframe>
+        {% endif %}
+
+        {% if page.bandcamp-compilation-2 %}
+            <iframe class="bandcamp-item bandcamp-item__release" src="http://bandcamp.com/EmbeddedPlayer/v=2/album={{ page.bandcamp-compilation-2 }}/layout=http_3A_2F_2Fbandcamp-play.github.io_2Firukanji-album.json/bgcol=333/linkcol=88ffff/debug=true/"></iframe>
+        {% endif %}
+    </section>
+</article>

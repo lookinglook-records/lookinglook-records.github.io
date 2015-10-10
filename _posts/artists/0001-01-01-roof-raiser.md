@@ -1,17 +1,19 @@
 ---
 layout: artist
-title: Roof Raiser
-url-id: roof-raiser
-meta: Roof Raiser
-keywords: Roof Raiser
-
-name: Alexey Petrovskiy
-location: Kyiv, Ukraine
-soundcloud-id: 
-
 category: artists
+title: Roof Raiser
 permalink: /artist/roof-raiser/
 
+photo: /assets/img/artists/roof-raiser-large.jpg
+name: Alexey Petrovskiy
+location: Kyiv, Ukraine
+
+soundcloud: 
+fasebook: 
+bandcamp: 
+discogs: 
+coub: 
+website: 
 ---
 
 
