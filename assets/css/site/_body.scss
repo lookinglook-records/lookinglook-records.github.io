@@ -3,8 +3,6 @@ body {
     color: $text-color;
     text-align: left;
     text-shadow: 1px 1px 1px $bg-color;
-    background: $bg-color url(/assets/img/bg.jpg) no-repeat center top;
-    margin-top: 0;
-    margin-bottom: 0;
-    position: relative;
+    background: $bg-color url(/assets/img/bg.jpg) repeat-y center top;
+    margin: 0;
 }

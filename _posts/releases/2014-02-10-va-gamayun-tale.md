@@ -1,13 +1,13 @@
 ---
-layout: default
+layout: artist
 
 category: releases
 permalink: /release/va-gamayun-tale/
 title: VA «Gamayun Tale»
 
-ektoplazm: 
 bandcamp: https://lookinglook.bandcamp.com/album/va-gamayun-tale
 discogs: 
+ektoplazm: 
 
 bandcamp-id: 
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: artist
 title: Roof Raiser
 url-id: roof-raiser
 meta: Roof Raiser

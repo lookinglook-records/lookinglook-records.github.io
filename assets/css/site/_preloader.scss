@@ -1,20 +1,23 @@
 #load_screen {
     opacity: 1;
-    position: fixed;
+    position: absolute;
     z-index: 10;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 
     color: $text-color;
     text-shadow: 1px 1px 1px $bg-color;
     background: $bg-color url(/assets/img/bg.jpg) no-repeat center top;
-    // background: #000;
+    background: #000;
+    text-align: center;
 
    #loading {
+        position: absolute;
         color: #fff;
-        width: 120px;
+        width: 100%;
         height: 24px;
-        margin: 50% auto 0;
+        margin: 40% auto 0;
     }
 }

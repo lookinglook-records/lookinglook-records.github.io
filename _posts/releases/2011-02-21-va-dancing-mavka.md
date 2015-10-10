@@ -1,13 +1,13 @@
 ---
-layout: default
+layout: artist
 
 category: releases
 permalink: /release/va-dancing-mavka/
 title: VA «Dansing Mavka»
 
-ektoplazm: http://www.ektoplazm.com/free-music/dancing-mavka
 bandcamp: https://lookinglook.bandcamp.com/album/va-dancing-mavka
 discogs: 
+ektoplazm: http://www.ektoplazm.com/free-music/dancing-mavka
 
 bandcamp-id: 
 ---

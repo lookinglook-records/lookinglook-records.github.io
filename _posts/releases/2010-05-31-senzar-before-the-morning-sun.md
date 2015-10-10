@@ -1,13 +1,13 @@
 ---
-layout: default
+layout: artist
 
 category: releases
 permalink: /release/senzar-before-the-morning-sun/
 title: Senzar ‎«Before The Morning Sun»
 
-ektoplazm: http://www.ektoplazm.com/free-music/senzar-before-the-morning-sun
 bandcamp: https://lookinglook.bandcamp.com/album/senzar-before-the-morning-sun
 discogs: 
+ektoplazm: http://www.ektoplazm.com/free-music/senzar-before-the-morning-sun
 
 bandcamp-id: 
 ---

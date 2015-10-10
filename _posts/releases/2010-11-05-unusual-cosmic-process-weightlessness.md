@@ -1,13 +1,13 @@
 ---
-layout: default
+layout: artist
 
 category: releases
 permalink: /release/unusual-cosmic-process-weightlessness/
 title: Unusual Cosmic Process ‎«Weightlessness»
 
-ektoplazm: http://www.ektoplazm.com/free-music/unusual-cosmic-process-weightlessness
 bandcamp: https://lookinglook.bandcamp.com/album/unusual-cosmic-process-weightlessness
 discogs: 
+ektoplazm: http://www.ektoplazm.com/free-music/unusual-cosmic-process-weightlessness
 
 bandcamp-id: 
 ---

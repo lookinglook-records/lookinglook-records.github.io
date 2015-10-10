@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: artist
 
 category: releases
 permalink: /release/ufomatka-the-ep/
 title: Ufomatka «The E.P.»
 
-ektoplazm: 
 bandcamp: https://lookinglook.bandcamp.com/album/ufomatka-the-e-p
+ektoplazm: 
 discogs: 
 
 bandcamp-id: 
