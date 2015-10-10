@@ -1,0 +1,7 @@
+aside {
+    @include span-columns(3);
+
+    section {
+        margin-bottom: 40px;
+    }
+}

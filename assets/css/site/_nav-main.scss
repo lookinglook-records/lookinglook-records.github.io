@@ -1,7 +1,8 @@
 nav.main-nav {
     @include span-columns(12);
     text-transform: uppercase;
-    margin: 40px auto;
+    margin-bottom: 50px;
+    text-align: center;
 
     a {
         display: inline-block;
