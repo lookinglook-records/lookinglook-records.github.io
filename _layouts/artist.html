@@ -21,6 +21,30 @@ layout: default
         {% if page.about %}
             <p>{{ page:about }}</p>
         {% endif %}
+
+        <nav class="artist-links">
+            {% if page.soundcloud %}
+                <a href="{{ page:soundcloud }}">soundcloud</a>
+            {% endif %}
+            {% if page.fasebook-page %}
+                <a href="{{ page:fasebook-page }}">fasebook page</a>
+            {% endif %}
+            {% if page.fasebook-profile %}
+                <a href="{{ page:fasebook-profile }}">fasebook-profile</a>
+            {% endif %}
+            {% if page.bandcamp %}
+                <a href="{{ page:bandcamp }}">bandcamp</a>
+            {% endif %}
+            {% if page.discogs %}
+                <a href="{{ page:soundcloud }}">discogs</a>
+            {% endif %}
+            {% if page.coub %}
+                <a href="{{ page:soundcloud }}">coub</a>
+            {% endif %}
+            {% if page.website %}
+                <a href="{{ page:soundcloud }}">website</a>
+            {% endif %}
+        </nav>
     </section>
     <section class="music">
         {% if page.bandcamp-track-1 %}
