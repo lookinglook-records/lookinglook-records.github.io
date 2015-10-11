@@ -2,11 +2,20 @@ article.item-artist {
     @include outer-container;
 
     section.info {
-        @include span-columns(6);
+        @include span-columns(12);
+        @include omega();
+        @include media($desktop) {
+            @include span-columns(6);
+            @include omega();
+        }
     }
     section.music {
-        @include span-columns(6);
+        @include span-columns(12);
         @include omega();
+        @include media($desktop) {
+            @include span-columns(6);
+            @include omega();
+        }
 
         iframe.bandcamp-item {
             display: block;
