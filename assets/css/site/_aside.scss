@@ -1,7 +1,10 @@
 aside {
     @include span-columns(12);
+    @include omega();
 	@include media($desktop) {
+    margin-bottom: 40px;
 		@include span-columns(3);
+    	@include omega();
 	}
     section {
         margin-bottom: 40px;
