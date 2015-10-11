@@ -1,5 +1,5 @@
 ---
-layout: artist
+layout: release
 
 category: releases
 permalink: /release/va-gamayun-tale/
