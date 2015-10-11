@@ -3,10 +3,18 @@ article.item-release {
 
     section.info {
         @include span-columns(6);
+        @include media($desktop) {
+            @include span-columns(12);
+            @include omega();
+        }
     }
     section.music {
         @include span-columns(6);
         @include omega();
+        @include media($desktop) {
+            @include span-columns(12);
+            @include omega();
+        }
 
         iframe.bandcamp-item {
             display: block;
