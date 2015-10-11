@@ -23,14 +23,17 @@ layout: default
         {% endif %}
 
         <nav class="artist-links">
+            {% if page.website %}
+                <a href="{{ page:soundcloud }}">website</a>
+            {% endif %}
             {% if page.soundcloud %}
                 <a href="{{ page:soundcloud }}">soundcloud</a>
             {% endif %}
-            {% if page.fasebook-page %}
-                <a href="{{ page:fasebook-page }}">fasebook page</a>
+            {% if page.facebook-page %}
+                <a href="{{ page:facebook-page }}">facebook page</a>
             {% endif %}
-            {% if page.fasebook-profile %}
-                <a href="{{ page:fasebook-profile }}">fasebook-profile</a>
+            {% if page.facebook-profile %}
+                <a href="{{ page:facebook-profile }}">facebook-profile</a>
             {% endif %}
             {% if page.bandcamp %}
                 <a href="{{ page:bandcamp }}">bandcamp</a>
@@ -40,9 +43,6 @@ layout: default
             {% endif %}
             {% if page.coub %}
                 <a href="{{ page:soundcloud }}">coub</a>
-            {% endif %}
-            {% if page.website %}
-                <a href="{{ page:soundcloud }}">website</a>
             {% endif %}
         </nav>
     </section>
