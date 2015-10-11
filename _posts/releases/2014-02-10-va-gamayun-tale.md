@@ -6,10 +6,9 @@ permalink: /release/va-gamayun-tale/
 title: VA «Gamayun Tale»
 
 bandcamp: https://lookinglook.bandcamp.com/album/va-gamayun-tale
-discogs: 
+bandcamp-id: 3538385956
+discogs: http://www.discogs.com/Various-Gamayun-Tale/release/5400874
 ektoplazm: 
-
-bandcamp-id: 
 ---
 
 Tracklis:
@@ -25,7 +24,6 @@ Tracklis:
 09. ShizoLizer Gin - Skygravity Trance Mission
 10. Jyotish - Purple Imagination
 11. Rexuss - Chakra
-
 
 
 

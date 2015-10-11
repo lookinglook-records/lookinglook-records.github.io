@@ -6,10 +6,9 @@ permalink: /release/senzar-before-the-morning-sun/
 title: Senzar ‎«Before The Morning Sun»
 
 bandcamp: https://lookinglook.bandcamp.com/album/senzar-before-the-morning-sun
-discogs: 
+bandcamp-id: 3896908655
+discogs: http://www.discogs.com/Senzar-Before-The-Morning-Sun/release/2299220
 ektoplazm: http://www.ektoplazm.com/free-music/senzar-before-the-morning-sun
-
-bandcamp-id: 
 ---
 
 Tracklis:
@@ -24,7 +23,6 @@ Tracklis:
 08. Senzar - Path Of Dhyana [60-120bpm]
 09. Senzar - Book Of Dzyan [120bpm]
 10. Senzar - Before The Morning Sun (NASA Remix) [128bpm]
-
 
 
 

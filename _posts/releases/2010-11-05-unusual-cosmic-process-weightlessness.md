@@ -6,10 +6,9 @@ permalink: /release/unusual-cosmic-process-weightlessness/
 title: Unusual Cosmic Process ‎«Weightlessness»
 
 bandcamp: https://lookinglook.bandcamp.com/album/unusual-cosmic-process-weightlessness
-discogs: 
+bandcamp-id: 987015194
+discogs: http://www.discogs.com/Unusual-Cosmic-Process-Weightlessness/release/2517434
 ektoplazm: http://www.ektoplazm.com/free-music/unusual-cosmic-process-weightlessness
-
-bandcamp-id: 
 ---
 
 Tracklis:
@@ -21,7 +20,6 @@ Tracklis:
 05. Unusual Cosmic Process - Place On Earth [118bpm]
 06. Unusual Cosmic Process - Emotional Trip [120bpm]
 07. Unusual Cosmic Process - Maximum Depth [103bpm]
-
 
 
 

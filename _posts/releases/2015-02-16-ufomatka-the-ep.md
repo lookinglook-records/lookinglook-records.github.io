@@ -6,10 +6,9 @@ permalink: /release/ufomatka-the-ep/
 title: Ufomatka «The E.P.»
 
 bandcamp: https://lookinglook.bandcamp.com/album/ufomatka-the-e-p
+bandcamp-id: 342915204
+discogs: http://www.discogs.com/Ufomatka-The-Ep/release/6663582
 ektoplazm: 
-discogs: 
-
-bandcamp-id: 
 ---
 
 Tracklis:
@@ -19,7 +18,6 @@ Tracklis:
 03. Ufomatka - Freaky Son Of A Bitch
 04. Ufomatka - No End...
 05. Ufomatka - The Binman
-
 
 
 
