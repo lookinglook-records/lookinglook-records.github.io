@@ -2,20 +2,30 @@
 layout: default
 ---
 
-<h1>{{ page:title }}</h1>
+<article class="item-artist">
+    <section class="info">
+        <h1>{{ page:title }}</h1>
 
-{{ content }}
+        {{ content }}
 
-{% if page.bandcamp-id %}
-    <iframe class="bandcamp-item bandcamp-item__release" src="http://bandcamp.com/EmbeddedPlayer/v=2/track={{ page.bandcamp-id }}/layout=http_3A_2F_2Fbandcamp-play.github.io_2Firukanji-track.json/bgcol=333/linkcol=88ffff/debug=true/"></iframe>
-{% endif %}
+        <nav class="artist-links">
+            <span>Links: </span>
+            {% if page.bandcamp %}
+                <a href="{{ page:bandcamp }}" target="_blank">bandcamp</a>
+            {% endif %}
+            {% if page.discogs %}
+                <a href="{{ page:discogs }}" target="_blank">discogs</a>
+            {% endif %}
+            {% if page.ektoplazm %}
+                <a href="{{ page:ektoplazm }}" target="_blank">ektoplazm</a>
+            {% endif %}
+        </nav>
+    </section>
+    <section class="music">
 
-<nav class="artist-links">
-    <span>Links: </span>
-    {% if page.discogs %}
-        <a href="{{ page:discogs }}" target="_blank">discogs</a>
-    {% endif %}
-    {% if page.ektoplazm %}
-        <a href="{{ page:ektoplazm }}" target="_blank">ektoplazm</a>
-    {% endif %}
-</nav>
+        {% if page.bandcamp-id %}
+            <iframe class="bandcamp-item bandcamp-item__release" src="http://bandcamp.com/EmbeddedPlayer/v=2/track={{ page.bandcamp-id }}/layout=http_3A_2F_2Fbandcamp-play.github.io_2Firukanji-track.json/bgcol=333/linkcol=88ffff/debug=true/"></iframe>
+        {% endif %}
+
+    </section>
+</article>
