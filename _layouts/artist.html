@@ -11,38 +11,39 @@ layout: default
         {% endif %}
 
         {% if page.name %}
-            <p>Name: {{ page:name }}</p>
+            <div>Name: {{ page:name }}</div>
         {% endif %}
 
         {% if page.location %}
-            <p>Location: {{ page:location }}</p>
+            <div>Location: {{ page:location }}</div>
         {% endif %}
 
         {% if page.about %}
-            <p>{{ page:about }}</p>
+            <div>{{ page:about }}</div>
         {% endif %}
 
         <nav class="artist-links">
+                <span>Links: </span>
             {% if page.website %}
-                <a href="{{ page:soundcloud }}">website</a>
+                <a href="{{ page:soundcloud }}" target="_blank">website</a>
             {% endif %}
             {% if page.soundcloud %}
-                <a href="{{ page:soundcloud }}">soundcloud</a>
+                <a href="{{ page:soundcloud }}" target="_blank">soundcloud</a>
             {% endif %}
             {% if page.facebook-page %}
-                <a href="{{ page:facebook-page }}">facebook page</a>
+                <a href="{{ page:facebook-page }}" target="_blank">facebook</a>
             {% endif %}
             {% if page.facebook-profile %}
-                <a href="{{ page:facebook-profile }}">facebook-profile</a>
+                <a href="{{ page:facebook-profile }}" target="_blank" style="display:none;">facebook profile</a>
             {% endif %}
             {% if page.bandcamp %}
-                <a href="{{ page:bandcamp }}">bandcamp</a>
+                <a href="{{ page:bandcamp }}" target="_blank">bandcamp</a>
             {% endif %}
             {% if page.discogs %}
-                <a href="{{ page:soundcloud }}">discogs</a>
+                <a href="{{ page:soundcloud }}" target="_blank">discogs</a>
             {% endif %}
             {% if page.coub %}
-                <a href="{{ page:soundcloud }}">coub</a>
+                <a href="{{ page:soundcloud }}" target="_blank">coub</a>
             {% endif %}
         </nav>
     </section>
