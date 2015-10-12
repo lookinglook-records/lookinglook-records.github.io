@@ -13,7 +13,7 @@ soundcloud:
 facebook-page: 
 facebook-profile: 
 bandcamp: 
-discogs: 
+discogs: http://www.discogs.com/artist/1113222-Unusual-Cosmic-Process
 coub: 
 website: 
 

@@ -1,8 +1,8 @@
 ---
 layout: artist
 category: artists
-title: ShizoLizer Gin
-permalink: /artist/shizoLizer-gin/
+title: Kalpataru Tree
+permalink: /artist/kalpataru-tree/
 
 photo: 
 name: 
@@ -13,7 +13,7 @@ soundcloud:
 facebook-page: 
 facebook-profile: 
 bandcamp: 
-discogs: http://www.discogs.com/artist/1880433-Shizolizer-Gin
+discogs: http://www.discogs.com/artist/787846-Kalpataru-Tree
 coub: 
 website: 
 

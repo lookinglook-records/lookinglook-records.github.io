@@ -13,7 +13,7 @@ soundcloud:
 facebook-page: 
 facebook-profile: 
 bandcamp: 
-discogs: 
+discogs: http://www.discogs.com/artist/1621095-Sky-Technology
 coub: 
 website: 
 
