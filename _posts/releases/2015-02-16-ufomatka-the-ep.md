@@ -11,7 +11,11 @@ discogs: http://www.discogs.com/Ufomatka-The-Ep/release/6663582
 ektoplazm: 
 ---
 
-Tracklis:
+Lookinglook Records presents the new goatrance release by our beloved artist Ufomatka.
+
+"The E​.​P." is an eneretic bundle of 5 previously unreleased dancefloor smashing tracks collected by the artist during the last several years.
+
+Get it now, completely free, and have fun!
 
 01. Ufomatka - Afrodancerequesting
 02. Ufomatka - Vanguard1
