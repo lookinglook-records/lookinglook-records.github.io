@@ -1,9 +1,10 @@
 ---
 layout: release
-
 category: releases
-permalink: /release/senzar-before-the-morning-sun/
 title: Senzar ‎«Before The Morning Sun»
+permalink: /release/senzar-before-the-morning-sun/
+
+cover1: 
 
 bandcamp: https://lookinglook.bandcamp.com/album/senzar-before-the-morning-sun
 bandcamp-id: 3896908655

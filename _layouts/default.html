@@ -32,24 +32,26 @@ layout: compress
         </nav>
 
         <aside>
-            <section class="releases">
+            <section>
                 <h4>Releases:</h4>
                 {% for releases in site.categories.releases limit:10 %}
-                <article class="relaselist-item isotope-item">
                     <a href="{{ releases.permalink }}">
-                        <div class="title">{{ releases.title }}</div>
+                        {% if releases.cove1 %}
+                            <img src="{{ releases.cover1 }}" alt="Thumbnail of {{ releases.title }}">
+                        {% endif %}
+                        <h5>{{ releases.title }}</h5>
                     </a>
-                </article>
                 {% endfor %}
             </section>
-            <section class="artists">
+            <section>
                 <h4>Artists:</h4>
                 {% for artists in site.categories.artists limit:20 %}
-                <article class="relaselist-item isotope-item">
                     <a href="{{ artists.permalink }}">
-                        <div class="title">{{ artists.title }}</div>
+                        {% if artists.photo %}
+                            <img src="{{ artists.photo }}" alt="Thumbnail of {{ artists.title }}">
+                        {% endif %}
+                        <h5>{{ artists.title }}</h5>
                     </a>
-                </article>
                 {% endfor %}
             </section>
         </aside>
