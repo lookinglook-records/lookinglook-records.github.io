@@ -1,5 +1,5 @@
 # Build settings
-baseurl: /lookinglook
+baseurl: 
 markdown: kramdown
 permalink: /:title/
 
