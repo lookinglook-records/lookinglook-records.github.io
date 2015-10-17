@@ -4,7 +4,7 @@ category: artists
 title: Unusual Cosmic Process
 permalink: /artist/unusual-cosmic-process/
 
-photo: 
+photo: /assets/img/artists/unusual-cosmic-process-large.jpg
 name: 
 location: 
 about: 

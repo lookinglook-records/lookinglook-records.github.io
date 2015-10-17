@@ -4,7 +4,7 @@ category: artists
 title: Sky Technology
 permalink: /artist/sky-technology/
 
-photo: 
+photo: /assets/img/artists/sky-technology-large.jpg
 name: 
 location: 
 about: 
