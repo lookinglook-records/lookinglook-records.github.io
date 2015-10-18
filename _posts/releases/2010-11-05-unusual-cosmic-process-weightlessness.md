@@ -1,9 +1,10 @@
 ---
 layout: release
-
 category: releases
-permalink: /release/unusual-cosmic-process-weightlessness/
 title: Unusual Cosmic Process ‎«Weightlessness»
+permalink: /release/unusual-cosmic-process-weightlessness/
+
+cover1: 
 
 bandcamp: https://lookinglook.bandcamp.com/album/unusual-cosmic-process-weightlessness
 bandcamp-id: 987015194

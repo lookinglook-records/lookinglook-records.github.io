@@ -1,9 +1,10 @@
 ---
 layout: release
-
 category: releases
-permalink: /release/va-gamayun-tale/
 title: VA «Gamayun Tale»
+permalink: /release/va-gamayun-tale/
+
+cover1: 
 
 bandcamp: https://lookinglook.bandcamp.com/album/va-gamayun-tale
 bandcamp-id: 3538385956

@@ -1,9 +1,10 @@
 ---
 layout: release
-
 category: releases
-permalink: /release/ufomatka-the-ep/
 title: Ufomatka «The E.P.»
+permalink: /release/ufomatka-the-ep/
+
+cover1: 
 
 bandcamp: https://lookinglook.bandcamp.com/album/ufomatka-the-e-p
 bandcamp-id: 342915204
