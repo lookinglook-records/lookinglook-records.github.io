@@ -17,11 +17,9 @@ discogs: http://www.discogs.com/artist/1113222-Unusual-Cosmic-Process
 coub: 
 website: 
 
-bandcamp-track-1: 
+bandcamp-track-1: 2481837806
 bandcamp-track-2: 
-bandcamp-album-1: 
+bandcamp-album-1: 987015194
 bandcamp-compilation-1: 
 bandcamp-compilation-2: 
 ---
-
-

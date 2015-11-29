@@ -1,9 +1,10 @@
 ---
 layout: release
-
 category: releases
-permalink: /release/va-dancing-mavka/
 title: VA «Dansing Mavka»
+permalink: /release/va-dancing-mavka/
+
+cover1: 
 
 bandcamp: https://lookinglook.bandcamp.com/album/va-dancing-mavka
 bandcamp-id: 95715287
