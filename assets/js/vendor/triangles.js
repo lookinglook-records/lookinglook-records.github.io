@@ -801,16 +801,14 @@ FSS.Plane = function(width, height, howmany) {
 
   for(i = triangles.length; i; ) {
     --i;
-    v1 = new FSS.Vertex(Math.ceil(vertices[triangles[i]][0]), Math.ceil(vertices[triangles[i]][1]));
+    var p1 = [Math.ceil(vertices[triangles[i]][0]), Math.ceil(vertices[triangles[i]][1])];
     --i;
-    v2 = new FSS.Vertex(Math.ceil(vertices[triangles[i]][0]), Math.ceil(vertices[triangles[i]][1]));
+    var p2 = [Math.ceil(vertices[triangles[i]][0]), Math.ceil(vertices[triangles[i]][1])];
     --i;
-    v3 = new FSS.Vertex(Math.ceil(vertices[triangles[i]][0]), Math.ceil(vertices[triangles[i]][1]));
-    t1 = new FSS.Triangle(v1,v2,v3);
+    var p3 = [Math.ceil(vertices[triangles[i]][0]), Math.ceil(vertices[triangles[i]][1])];
+
+    t1 = new FSS.Triangle(new FSS.Vertex(p1[0],p1[1]), new FSS.Vertex(p2[0],p2[1]), new FSS.Vertex(p3[0],p3[1]));
     this.triangles.push(t1);
-    this.vertices.push(v1);
-    this.vertices.push(v2);
-    this.vertices.push(v3);
   }
 };
 
@@ -1585,8 +1583,6 @@ c);e.bind(this.domElement,"transitionend",c);e.bind(this.domElement,"oTransition
     width: 1.2,
     height: 1.2,
     slices: 250,
-    depth: 0,
-    maxdepth: 200,
     ambient: '#555555',
     diffuse: '#FFFFFF'
   };
@@ -1595,7 +1591,7 @@ c);e.bind(this.domElement,"transitionend",c);e.bind(this.domElement,"oTransition
   // Light Properties
   //------------------------------
   var LIGHT = {
-    count: 0,
+    count: 1,
     xPos : 0,
     yPos : 200,
     zOffset: 100,
@@ -1603,44 +1599,7 @@ c);e.bind(this.domElement,"transitionend",c);e.bind(this.domElement,"oTransition
     diffuse: '#00ffb3',
     pickedup :true,
     proxy : false,
-    currIndex : 0,
-    randomize : function(){
-      var x,y,z;
-      var decider = Math.floor(Math.random() * 3) + 1;
-
-      if (decider == 1) MESH.depth = 0;
-      if (decider == 2) MESH.depth = Math.randomInRange(0, 150);
-      if (decider == 3) MESH.depth = Math.randomInRange(150, 200);
-
-      for (l = scene.lights.length - 1; l >= 0; l--) {
-        x = Math.randomInRange(-mesh.geometry.width/2, mesh.geometry.width/2);
-        y = Math.randomInRange(-mesh.geometry.height/2, mesh.geometry.height/2);
-        if(scene.lights.length > 2) z = Math.randomInRange(10, 80);
-        else z = Math.randomInRange(10, 100);
-
-        light = scene.lights[l];
-        FSS.Vector3.set(light.position, x, y, z);
-
-        var diffuse = getRandomColor();
-        var ambient = getRandomColor();
-
-        light.diffuse.set(diffuse);
-        light.diffuseHex = light.diffuse.format();
-
-        light.ambient.set(ambient);
-        light.ambientHex = light.ambient.format();
-
-        LIGHT.xPos    = x;
-        LIGHT.yPos    = y;
-        LIGHT.zOffset = z;
-        LIGHT.diffuse = diffuse;
-        LIGHT.ambient = ambient;
-
-        // Hacky way to allow manual update of the HEX colors for light's diffuse
-        gui.__folders.Light.__controllers[1].updateDisplay();
-        gui.__folders.Light.__controllers[2].updateDisplay();
-      }
-    }
+    currIndex : 0
   };
 
   //------------------------------
@@ -1683,7 +1642,7 @@ c);e.bind(this.domElement,"transitionend",c);e.bind(this.domElement,"oTransition
       // store a temp value of the slices
       var slices = MESH.slices;
       // Increase or decrease number of slices depending on the size of the canvas
-      MESH.slices = Math.ceil(slices*scalarX*1.4);
+      MESH.slices = Math.ceil(slices*scalarX*1.3);
 
       // Regenerate the whole canvas
       resize(this.width, this.height);
@@ -1700,8 +1659,6 @@ c);e.bind(this.domElement,"transitionend",c);e.bind(this.domElement,"oTransition
         FSS.Vector3.set(light.position, x*scalarX, y*scalarY, z*scalarX);
       }
 
-      // Update depth of the triangles
-      update();
       // Render the canvas
       render();
 
@@ -1750,10 +1707,9 @@ c);e.bind(this.domElement,"transitionend",c);e.bind(this.domElement,"oTransition
     createRenderer();
     createScene();
     createMesh();
-    addLights();
+    addLight();
     addEventListeners();
     addControls();
-    LIGHT.randomize();
     resize(container.offsetWidth, container.offsetHeight);
     animate();
   }
@@ -1795,55 +1751,28 @@ c);e.bind(this.domElement,"transitionend",c);e.bind(this.domElement,"oTransition
     material = new FSS.Material(MESH.ambient, MESH.diffuse);
     mesh = new FSS.Mesh(geometry, material);
     scene.add(mesh);
-
-    // Augment vertices for depth modification
-    var v, vertex;
-    for (v = geometry.vertices.length - 1; v >= 0; v--) {
-      vertex = geometry.vertices[v];
-      vertex.depth = Math.randomInRange(0, MESH.maxdepth/10);
-      vertex.anchor = FSS.Vector3.clone(vertex.position);
-    }
   }
 
   // Add a single light
-  function addLight(ambient, diffuse, x, y, z) {
-    ambient = typeof ambient !== 'undefined' ? ambient : LIGHT.ambient;
-    diffuse = typeof diffuse !== 'undefined' ? diffuse : getRandomColor();
-    x = typeof x !== 'undefined' ? x : LIGHT.xPos;
-    y = typeof y !== 'undefined' ? y : LIGHT.yPos;
-    z = typeof z !== 'undefined' ? z : LIGHT.zOffset;
-
+  function addLight() {
     renderer.clear();
-    light = new FSS.Light(ambient, diffuse);
+    light = new FSS.Light(LIGHT.ambient, LIGHT.diffuse);
     light.ambientHex = light.ambient.format();
     light.diffuseHex = light.diffuse.format();
-    light.setPosition(x, y, z);
+    light.setPosition(LIGHT.xPos, LIGHT.yPos, LIGHT.zOffset);
     scene.add(light);
-    LIGHT.diffuse = diffuse;
     LIGHT.proxy = light;
     LIGHT.pickedup = true;
     LIGHT.currIndex++;
   }
 
-  function addLights() {
-    var num = Math.floor(Math.random() * 4) + 1;
-
-    for (var i = num - 1; i >= 0; i--) {
-      addLight();
-      LIGHT.count++;
-    };
-  }
-
-  // Remove lights
+  // Remove lights 
   function trimLights(value) {
-    for (l = value; l <= scene.lights.length; l++) {
+    LIGHT.proxy = scene.lights[value];
+    for (l = value; l >= scene.lights.length - 1; l--) {
       light = scene.lights[l];
       scene.remove(light);
-      LIGHT.currIndex--;
     }
-    LIGHT.proxy = scene.lights[LIGHT.currIndex-1];
-    LIGHT.pickedup = false;
-
     renderer.clear();
   }
 
@@ -1855,23 +1784,8 @@ c);e.bind(this.domElement,"transitionend",c);e.bind(this.domElement,"oTransition
   }
 
   function animate() {
-    update();
     render();
     requestAnimationFrame(animate);
-  }
-
-  function update() {
-    var v, vertex, offset = MESH.depth/100;
-
-    // Add depth to Vertices
-    for (v = geometry.vertices.length - 1; v >= 0; v--) {
-      vertex = geometry.vertices[v];
-      FSS.Vector3.set(vertex.position, 1, 1, vertex.depth*offset);
-      FSS.Vector3.add(vertex.position, vertex.anchor);
-    }
-
-    // Set the Geometry to dirty
-    geometry.dirty = true;
   }
 
   function render() {
@@ -1927,9 +1841,6 @@ c);e.bind(this.domElement,"transitionend",c);e.bind(this.domElement,"oTransition
     controller.onChange(function(value) {
       if (geometry.height !== value * renderer.height) { createMesh(); }
     });
-
-    controller = meshFolder.add(MESH, 'depth', 0, MESH.maxdepth).listen();
-
     controller = meshFolder.add(MESH, 'slices', 1, 800);
     controller.step(1);
     controller.onChange(function(value) {
@@ -1941,35 +1852,31 @@ c);e.bind(this.domElement,"transitionend",c);e.bind(this.domElement,"oTransition
     controller = lightFolder.add(LIGHT, 'currIndex', {1:1, 2:2, 3:3, 4:4, 5:5, 6:6, 7:7}).name('Current light').listen();
     controller.onChange(function(value) {
       LIGHT.proxy = scene.lights[value-1];
-
       LIGHT.ambient = LIGHT.proxy.ambient.hex;
       LIGHT.diffuse = LIGHT.proxy.diffuse.hex;
-      LIGHT.xPos    = LIGHT.proxy.position[0];
-      LIGHT.yPos    = LIGHT.proxy.position[1];
-      LIGHT.zOffset = LIGHT.proxy.position[2];
-
-      // Hacky way to allow manual update of the HEX colors for light's ambient and diffuse
-      gui.__folders.Light.__controllers[1].updateDisplay();
-      gui.__folders.Light.__controllers[2].updateDisplay();
+      LIGHT.xPos =  LIGHT.proxy.position[0];
+      LIGHT.yPos =  LIGHT.proxy.position[1];
+      LIGHT.zOffset =  LIGHT.proxy.position[2];
     });
 
-    controller = lightFolder.addColor(LIGHT, 'ambient');
+    controller = lightFolder.addColor(LIGHT, 'ambient').listen();
     controller.onChange(function(value) {
       LIGHT.proxy.ambient.set(value);
       LIGHT.proxy.ambientHex =  LIGHT.proxy.ambient.format();
     });
 
-    controller = lightFolder.addColor(LIGHT, 'diffuse');
+    controller = lightFolder.addColor(LIGHT, 'diffuse').listen();
     controller.onChange(function(value) {
+      console.log(value);
       LIGHT.proxy.diffuse.set(value);
-      LIGHT.proxy.diffuseHex = LIGHT.proxy.diffuse.format();
+      LIGHT.proxy.diffuseHex = LIGHT.proxy.ambient.format();
     });
 
     controller = lightFolder.add(LIGHT, 'count', 1, 7).listen();
     controller.step(1);
     controller.onChange(function(value) {
-      if (scene.lights.length !== value) {
-        // If the value is more then the number of lights, add lights, otherwise delete lights from the scene
+      if (scene.lights.length !== value) { 
+        // If the value is more then the number of lights, add lights, otherwise delete lights
         if (value > scene.lights.length) {
           addLight();
         } else {
@@ -1990,59 +1897,11 @@ c);e.bind(this.domElement,"transitionend",c);e.bind(this.domElement,"oTransition
       LIGHT.proxy.setPosition(LIGHT.proxy.position[0], value, LIGHT.proxy.position[2]);
     });
 
-
-
-    /* JQuery Block ****
-    ** Two different binds called to allow for mouse-scroll modification of
-    ** z-offset. One of the binds handle specifically for Firefox,
-    ** and the other handles for IE, Opera and Safari
-    ** Works in: Opera, Safari, IE9+. and Chrome.
-    ** NaN Error in Firefox.
-    */
-
     controller = lightFolder.add(LIGHT, 'zOffset', 0, 1000).name('Distance').listen();
-    scrollButtonDistance = Number(LIGHT.proxy.position[2]);
-    //Firefox
-    $('#container').bind('DOMMouseScroll', function(e) {
-        if(e.originalEvent.detail > 0) {
-         scrollButtonDistance = Number(Math.max(0, scrollButtonDistance - e.detail/4));
-        } else {
-         scrollButtonDistance =  Number(Math.min(1000, scrollButtonDistance - e.detail/4));
-        }
-
-        LIGHT.proxy.setPosition(LIGHT.proxy.position[0], LIGHT.proxy.position[1], scrollButtonDistance);
-         LIGHT.zOffset = scrollButtonDistance;
-        LIGHT.z = scrollButtonDistance;
-        gui.__folders.Light.__controllers[1].updateDisplay();
-        gui.__folders.Light.__controllers[2].updateDisplay();
-        return false;
-    });
-
-    //IE, Opera, Safari
-    $('#container').bind('mousewheel', function(e) {
-        if(e.originalEvent.wheelDelta < 0) {
-         scrollButtonDistance =  Number(Math.max(0, scrollButtonDistance + e.originalEvent.wheelDelta/4));
-        } else {
-         scrollButtonDistance = Number(Math.min(1000, scrollButtonDistance + e.originalEvent.wheelDelta/4));
-        }
-
-        LIGHT.proxy.setPosition(Number(LIGHT.proxy.position[0]), Number(LIGHT.proxy.position[1]), scrollButtonDistance);
-        LIGHT.zOffset = scrollButtonDistance;
-        LIGHT.z = scrollButtonDistance;
-        gui.__folders.Light.__controllers[1].updateDisplay();
-        gui.__folders.Light.__controllers[2].updateDisplay();
-
-        return false;
-    });
-
-    /* End JQuery Block */
-
     controller.step(1);
     controller.onChange(function(value) {
       LIGHT.proxy.setPosition(LIGHT.proxy.position[0], LIGHT.proxy.position[1], value);
     });
-
-    controller = lightFolder.add(LIGHT, 'randomize');
 
     // Add Export Controls
     controller = exportFolder.add(EXPORT, 'width', 100, 3000);
@@ -2062,9 +1921,6 @@ c);e.bind(this.domElement,"transitionend",c);e.bind(this.domElement,"oTransition
        e.style.display = 'block';
   }
 
-  function getRandomColor(){
-    return '#'+(Math.random().toString(16) + '000000').slice(2, 8);
-  }
 
   //------------------------------
   // Callbacks
@@ -2077,17 +1933,15 @@ c);e.bind(this.domElement,"transitionend",c);e.bind(this.domElement,"oTransition
 
   function onMouseMove(event) {
     if(LIGHT.pickedup){
-      LIGHT.xPos = (event.x || event.clientX) - renderer.width/2;
-      LIGHT.yPos = renderer.height/2 - (event.y || event.clientY);
+      LIGHT.xPos = event.x - renderer.width/2;
+      LIGHT.yPos = renderer.height/2 -event.y;
       LIGHT.proxy.setPosition(LIGHT.xPos, LIGHT.yPos, LIGHT.proxy.position[2]);
     }
   }
 
   // Hide the controls completely on pressing H
   Mousetrap.bind('H', function() {
-    toggleEl('controls');
-    toggleEl('links');
-
+    toggleEl('controls')
   });
 
   // Add a light on ENTER key
