@@ -6,6 +6,37 @@ keywords: Lookinglook Records, psychedelic, goa trance, chill-out
 permalink: /redesign/
 ---
 
-<h1>Lookinglook Records</h1>
-<h2>{{page.titleAfter}}</h2>
-<h3>New site version is coming soon</h3>
+<style>
+    .overlay {
+        pointer-events: none;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .container {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+    .controls {
+        font-smoothing: subpixel-antialiased;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        display: none;
+    }
+
+    .hide {
+        opacity: 0;
+    }
+</style>
+
+<div id="container" class="container">
+    <div id="output" class="container"></div>
+</div>
+
+<div id="controls" class="controls"></div>

@@ -1,3 +1,11 @@
+// Body
+$bodyBg: #666;
+$bodyFont: 600 15px/1.25 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$bodyColor: #ccc;
+
+// Grid
+$gridIndent: 20px;
+
 @import '../node_modules/coriolan-ui/coriolan-ui';
 
 @import 'base';
