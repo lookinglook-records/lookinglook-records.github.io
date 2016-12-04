@@ -1,9 +1,19 @@
-# Lookinglook Records
+# lookinglook.github.io
 
-Web development of Lookinglook Records site
+_Web development of Lookinglook Records site_
 
-	npm i
+### Used
 
-Used [jekyll](http://jekyllrb.com), [sass](http://sass-lang.com) with [bourbon](http://bourbon.io)
+[Jekyll](https://jekyllrb.com) - static site generator based on [Ruby](https://www.ruby-lang.org)
 
-Proudly hosted by [GitHub Pages](https://pages.github.com)
+[Gulp](http://gulpjs.com) - build system based on [NodeJS](https://nodejs.org)
+
+[GitHub Pages](https://pages.github.com) - free hosting
+
+### Run
+
+`npm i`
+
+`gulp`
+
+#### Have fun! :)

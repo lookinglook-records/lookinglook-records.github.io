@@ -4,7 +4,7 @@ layout: default
 
 <article class="item-release">
     <section class="info">
-        <h1>{{ page:title }}</h1>
+        <h1>{{ page.title }}</h1>
 
         {{ content }}
     </section>
@@ -13,13 +13,13 @@ layout: default
         <nav class="release-links">
             <span>Links: </span>
             {% if page.bandcamp %}
-                <a href="{{ page:bandcamp }}" target="_blank">bandcamp</a>
+                <a href="{{ page.bandcamp }}" target="_blank">bandcamp</a>
             {% endif %}
             {% if page.discogs %}
-                <a href="{{ page:discogs }}" target="_blank">discogs</a>
+                <a href="{{ page.discogs }}" target="_blank">discogs</a>
             {% endif %}
             {% if page.ektoplazm %}
-                <a href="{{ page:ektoplazm }}" target="_blank">ektoplazm</a>
+                <a href="{{ page.ektoplazm }}" target="_blank">ektoplazm</a>
             {% endif %}
         </nav>
 

@@ -5,15 +5,9 @@
     right: 0;
     top: 26px;
     right: 40px;
-    // height: 84px;
-    // padding: 26px 40px;
     box-sizing: border-box;
-    // width: 100%;
-    // background: rgba(#fff,.2);
-    // text-align: right;  
 
     &__link {
-        // float: left;
         display: inline-block;
         width: 36px;
         height: 36px;
@@ -21,25 +15,22 @@
         text-align: center;
         border-radius: 18px;
         background: #fff;
-        // background: rgba(#fff,.5);
         opacity: .5;
         margin-left: 8px;
         color: #035d7f;
         transition: opacity .2s ease-in-out;
 
         &:first-child {
-        margin-left: 0;
+            margin-left: 0;
         }
 
         &:hover {
-            // background: rgba(#fff,.85);
             opacity: .85;
         }
 
         &--ua:lang(ua),
         &--ru:lang(ru),
         &--en:lang(en) {
-            // background: rgba(#fff,.85);
             opacity: .85;
         }
     }

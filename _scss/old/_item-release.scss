@@ -4,6 +4,7 @@ article.item-release {
     section.info {
         @include span-columns(12);
         @include omega();
+
         @include media($desktop) {
             @include span-columns(7);
             @include omega();
@@ -12,6 +13,7 @@ article.item-release {
     section.music {
         @include span-columns(12);
         @include omega();
+
         @include media($desktop) {
             @include span-columns(5);
             @include omega();

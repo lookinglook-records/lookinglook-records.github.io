@@ -353,7 +353,6 @@ dl dd {
 
 table {
   -webkit-font-feature-settings: "kern", "liga", "tnum";
-  -moz-font-feature-settings: "kern", "liga", "tnum";
   -ms-font-feature-settings: "kern", "liga", "tnum";
   font-feature-settings: "kern", "liga", "tnum";
   border-collapse: collapse;
@@ -382,7 +381,6 @@ th {
 
 body {
   -webkit-font-feature-settings: "kern", "liga", "pnum";
-  -moz-font-feature-settings: "kern", "liga", "pnum";
   -ms-font-feature-settings: "kern", "liga", "pnum";
   font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
@@ -458,6 +456,8 @@ body {
   text-align: left;
   text-shadow: 1px 1px 1px #000;
   background: #000 url(/assets/img/bg.jpg) repeat-y center top;
+  background-attachment: fixed;
+  background-size: cover;
   margin: 0;
 }
 
@@ -678,7 +678,7 @@ article.item-artist iframe.bandcamp-item {
   width: 100%;
   overflow: hidden;
   max-width: 320px;
-  border: 1px solid #4E4E4E;
+  border: 1px solid #4e4e4e;
   margin-bottom: 10px;
   background: #333;
 }
